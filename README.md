@@ -4,7 +4,7 @@
 
 *This is a trial file*
 
-Adding emojis :bowtie: :+1: :sparkles: :poop: :snowman: :cat:
+Adding emojis :bowtie: :+1: :sparkles: :poop: :snowman: :cat: :stars:
 
 -----------------------------------------------------------------------------------------------------------------
 
