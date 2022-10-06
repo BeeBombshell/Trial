@@ -4,7 +4,7 @@ Are you really sure this is a trial file? 😕
 
 Nope? Is It? 😹
 
-Yes, I'm very sure about it!
+Yes, I'm very sure about it! 🤩
 
 Hooorayyyy!!! 🎉
 
