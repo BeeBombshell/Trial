@@ -1,6 +1,8 @@
 # :large_blue_circle::red_circle::white_circle::black_circle: TRIAL FILE :black_circle::white_circle::red_circle::large_blue_circle:
 ### Link to my GitHub Profile: https://github.com/BeeBombshell
 
+<img src="https://media.tenor.com/uICGiTPlUpgAAAAd/cat-leaving.gif" width=200>
+
 > Hello :red_circle:
 
 > This is a trial file
