@@ -2,6 +2,7 @@
 ### Link to my GitHub Profile: https://github.com/BeeBombshell
 
 <img src="https://media.tenor.com/uICGiTPlUpgAAAAd/cat-leaving.gif" width=200>
+<img src="https://media.tenor.com/o2jPyfNEI5QAAAAC/cute-pokemon.gif" width=200>
 
 > Hello :red_circle:
 
