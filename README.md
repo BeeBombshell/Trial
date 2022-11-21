@@ -1,6 +1,7 @@
 # :large_blue_circle::red_circle::white_circle::black_circle: TRIAL FILE :black_circle::white_circle::red_circle::large_blue_circle:
 ### Link to my GitHub Profile: https://github.com/BeeBombshell
 
+## `GIFs` because why not?
 <img src="https://media.tenor.com/uICGiTPlUpgAAAAd/cat-leaving.gif" width=200>
 <img src="https://media.tenor.com/o2jPyfNEI5QAAAAC/cute-pokemon.gif" width=200>
 <img src="https://media.giphy.com/media/b8RfbQFaOs1rO10ren/giphy.gif" width=200>
