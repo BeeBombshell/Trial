@@ -1,0 +1,36 @@
+---
+title: Buildship - Crawler
+description: Perform parallel crawling of web pages using headless Chrome with Puppeteer.
+---
+
+# Buildship - Crawler
+This node allows for the parallel crawling of web pages using headless Chrome with Puppeteer. It is particularly useful for extracting data from websites in a structured manner.
+
+## How to use?
+The Crawler node performs web scraping tasks by sending a POST request to the specified URL. It also allows for the configuration of the maximum number of requests per crawl, the maximum number of concurrent crawls, and the use of proxy URLs. Additionally, it uses selectors to grab specific elements from the HTML of the web pages.
+
+## Inputs / Outputs
+
+### Inputs
+The inputs for this node include:
+
+- **Website URL**: The URL of the website to start crawling. For example, `https://www.buildship.com`.
+
+- **Selector**: An HTML selector to grab the inner text from, such as '.container' or "#container". For example, `div.content`.
+
+- **Max Requests Per Crawl**: The maximum number of requests to be executed per crawl. The maximum limit is 50. For example, `10`.
+
+- **Max Concurrency**: The number of crawls to run in parallel. The maximum limit is 20. For example, `5`.
+
+- **Proxy URLs**: A list of proxy URLs to be used automatically by the crawler for all connections. This field is optional.
+
+- **Crawl ID**: The crawl ID returned from a previous crawl to continue crawling remaining URLs. This field is optional.
+
+### Output
+The output of this node is an object with the following properties:
+
+- **Count**: The total number of pages crawled.
+
+- **Crawl ID**: The current crawl ID, which can be used to continue with remaining URLs. If the Items field is empty, it means there are no more URLs left to crawl.
+
+- **Items**: The pages that have been crawled.
