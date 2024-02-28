@@ -1,0 +1,31 @@
+---
+title: Hugging Face - Caption Image
+description: Generate captions for images using Hugging Face's Salesforce/blip-image-captioning-large model for image captioning pretrained on COCO dataset - base architecture (with ViT large backbone).
+---
+
+# Hugging Face - Caption Image
+This node is used to generate captions for images. It utilizes Hugging Face's Salesforce/blip-image-captioning-large model for image captioning pretrained on COCO dataset - base architecture (with ViT large backbone). The node takes in an image file path and an access token, and returns an array of objects with the generated captions.
+
+## How to use?
+To use this node, you need to provide the image file path and the access token. The image file path can be either a storage path or a URL of the image to be captioned. The access token can be generated at Hugging Face's website [here](https://huggingface.co/settings/tokens).
+
+The node script fetches the image data from the provided file path or URL and makes a POST request to the Hugging Face API with the image data and the access token. The API returns the generated captions.
+
+## Inputs / Outputs
+### Inputs
+The node requires the following inputs:
+
+1. Image File Path (string): The storage path or URL of the image to be captioned. For example, `"gs://my-bucket/my-image.jpg"` or `"https://example.com/my-image.jpg"`.
+2. Access Token (string): The access token generated at Hugging Face. For example, `"my-access-token"`.
+
+### Outputs
+The node returns an array of objects with the generated captions. Each object contains a `generated_text` property with the caption.
+
+Example output:
+```json
+[
+  {
+    "generated_text": "A giraffe cat with blue eyes laying on a stone floor"
+  }
+]
+```
