@@ -1,0 +1,39 @@
+---
+title: Script - A Blank Script
+description: A blank script node to help you get started with your workflow.
+---
+
+# Script - A Blank Script
+This is a node named 'A Blank Script' which is a part of the 'Script' group. It is a blank script node designed to provide a starting point for creating custom scripts.
+
+## How to use?
+This node is a simple script that logs and returns a 'Hello' message. The script is written in JavaScript and it's designed to be asynchronous. It accepts a 'name' as an input and logs a greeting message. It doesn't use the input for anything, but it's there to demonstrate how you can pass inputs to your script. 
+
+The script is as follows:
+```javascript
+export default async ({name},{logging}) => {
+  logging.log(`Hello `)
+  return `Hello `
+}
+```
+
+## Inputs / Outputs
+The node requires one input:
+
+- `name`: A string value. This input doesn't affect the output of the script, it's just there for demonstration purposes.
+
+**Example Input:**
+```json
+{
+  "name": "John"
+}
+```
+
+The node's output is a string with the value 'Hello'.
+
+**Example Output:**
+```json
+{
+  "output": "Hello"
+}
+```
