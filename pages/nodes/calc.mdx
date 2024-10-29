@@ -1,0 +1,40 @@
+---
+title: Calculator - Mathematical Operations
+description: The Calculator node performs a mathematical operation on two numbers.
+---
+
+# Calculator - Mathematical Operations
+The Calculator node is a versatile tool that can perform basic arithmetic operations such as addition, subtraction, multiplication, and division on two input numbers.
+
+## How to use?
+The Calculator node executes the selected arithmetic operation on the provided inputs. You need to specify the operation to be performed (add, subtract, multiply, or divide) and the two numbers on which the operation is to be performed.
+
+## Inputs / Outputs
+### Inputs
+The Calculator node requires three inputs:
+1. **First Number (a):** The first number in the operation. This is a number type input. For example, `5`.
+2. **Second Number (b):** The second number in the operation. This is also a number type input. For example, `3`.
+3. **Operation:** The arithmetic operation to be performed on the two numbers. This is a string input and can be one of the following: `add`, `subtract`, `multiply`, or `divide`.
+
+### Outputs
+The Calculator node returns the result of the arithmetic operation performed on the input numbers. The output is a number type. For instance, if the operation is `add`, and the inputs are `5` and `3`, the output will be `8`.
+
+The node script is as follows:
+```javascript
+export default function calculator({ a, b, operation }, { logging }) {
+  logging.log("Executing calculator", { a, b, operation })
+  switch (operation) {
+    case "add":
+      return  a + b;
+    case "subtract":
+      return a - b 
+    case "multiply":
+      return  a * b
+    case "divide":
+      return a / b 
+    default:
+      throw new Error(`Unknown operation: ${operation}`);
+  }
+}
+```
+This script takes the operation and the numbers as input, performs the specified operation, and returns the result.

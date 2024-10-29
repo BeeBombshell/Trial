@@ -1,0 +1,27 @@
+---
+title: Google Sheets - Get Sheets
+description: Fetch a Google Spreadsheet using the Google Sheets API
+---
+
+# Google Sheets - Get Sheets
+This node allows you to fetch data from a Google Spreadsheet using the Google Sheets API. It is designed to work with Google Sheets and requires an API key for authentication. It can retrieve specified ranges from the spreadsheet and returns the fetched data.
+
+## How to use?
+The node uses a script to fetch data from a Google Spreadsheet. This is done by providing the URL of the spreadsheet and the ranges to retrieve. The script uses the Google Sheets API to fetch the data and returns it in JSON format.
+
+The script uses the 'node-fetch' package to send a GET request to the Google Sheets API. It also utilizes the auth module to get an access token for the API request. If the spreadsheet URL is invalid, the script will throw an error.
+
+## Inputs / Outputs
+The node requires the following inputs:
+
+- `apiKey` (string): The API key for accessing the Google Sheets API.
+- `includeGridData` (boolean): Whether to include grid data in the fetched data.
+- `ranges` (array): The ranges to retrieve from the spreadsheet. The default is an empty array. For example, to fetch data from the first sheet, provide the input as `["Sheet1"]`.
+- `spreadsheetUrl` (string): The URL of the Google Spreadsheet to fetch. The URL should be in the following format: `https://docs.google.com/spreadsheets/d/spreadsheet-id/edit`.
+
+The node returns an object containing the fetched spreadsheet data. The output object has the following structure:
+
+- `buildship` (object): An empty object.
+- `description` (string): The description of the fetched data.
+- `title` (string): The title of the fetched data.
+- `type` (string): The type of the fetched data, which is 'object'.
